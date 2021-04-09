@@ -39,7 +39,7 @@ client.on('message', async message => {
     {
       let msg = "Farm this servers to get coins \n";
       res[1].forEach(element => {
-        msg = msg + "\n"+ element.name + " : " + element.invite
+        msg = msg + "\n"+ element.name + " : https://discord.gg/" + element.invite
       });
       return message.reply(msg)
     }
