@@ -1,0 +1,6 @@
+{
+    "botkey" : "yourkey",
+    "botid" : "yourbotid", 
+    "bottoken" : "yourbottoken", 
+    "prefix" : "?"
+}
