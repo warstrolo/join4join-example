@@ -49,12 +49,15 @@ module.exports.farm = async function (userid)
 }
 module.exports.buy = async function (userid, guildid, invitecode, buy_number)
 {
+  
     try {
         const response = await axios.post('https://join4join.xyz/server/API/'+guildid+'/'+userid+'/'+invitecode+'/'+buy_number+'/?botid='+config.botid+'&Authorization='+config.botkey);
         console.log('https://join4join.xyz/server/API/'+guildid+'/'+userid+'/'+invitecode+'/'+buy_number+'/?botid='+config.botid+'&Authorization='+config.botkey)
+        //console.log("test: " + response);
         return response.data
-        console.log(response);
+        
       } catch (error) {
+        //console.log(error);
         return false
       }
 }

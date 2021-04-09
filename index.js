@@ -45,7 +45,7 @@ client.on('message', async message => {
     }
     if (res[0] == "error")
     {
-     msg.reply(res[1])
+     message.reply(res[1])
     }
     //message.reply("No ads currently here so you cant get a join4join join code")
   }
@@ -62,6 +62,7 @@ client.on('message', async message => {
       });
       console.log(invite.code)
     let res = await request.buy(message.author.id, message.guild.id,invite.code, array[1] )
+    console.log("test")
     if (res == false)
     {
       return message.reply("An error occured")
