@@ -6,7 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on('guildMemberRemove', async member => {
-  let res = await request.leave(message.author.id, message.guild.id)
+  let res = await request.leave(member.id, member.guild.id)
 })
 client.on('message', async message => {
   let array = message.content.split(' ')
