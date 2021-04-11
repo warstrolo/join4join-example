@@ -74,17 +74,17 @@ client.on('message', async message => {
    
     res = "New system : ";
     res = res + "\n" + ":one: Login to the dashboard, then join our support servers"
-    res = res + "\n" + ":two: in <#830034378213949440> (bots-that-use-the-join4join-system) you will see community bots to invite"
-    res = res + "\n" + ":three: when you have invited 1 of all the bots you can use the ?buy command"
-    res = res + "\n" + ":four: when you have join a server with ?farm use ?join to get a 6 digits code"
-    res = res + "\n" + ":five: enter this 6 digits code to https://join4join.xyz/code"
-    res = res + "\n" + ":six: then you will receve your coins"
-    res = res + "\n \n" + "You are a bot owner"
-    res = res + "\n" + ":one: join the support server"
-    res = res + "\n" + ":two: enter the bot id on https://join4join/bots"
-    res = res + "\n" + ":three: download the example on https://github.com/warstrolo "
-    res = res + "\n" + ":four:  rename config-example.json and fill the vars of config.json with key from join4join.xyz site and token from discord.com"
-    res = res + "\n" + ":five: host-it, and then you will gain 0.25 coin / members joining guild that buy with you bot"
+    res = res + "\n" + ":two: In <#830034378213949440> (bots-that-use-the-join4join-system) you will see community bots to invite"
+    res = res + "\n" + ":three: When you have invited 1 of all the bots you can use the ?buy command"
+    res = res + "\n" + ":four: When you have join a server with ?farm use ?join to get a 6 digits code"
+    res = res + "\n" + ":five: Enter this 6 digits code to https://join4join.xyz/code"
+    res = res + "\n" + ":six: Then you will receve your coins"
+    res = res + "\n \n" + "**For Bot Owners**"
+    res = res + "\n" + ":one: Join the support server"
+    res = res + "\n" + ":two: Enter the bot id on https://join4join/bots"
+    res = res + "\n" + ":three: Download the example on https://github.com/warstrolo "
+    res = res + "\n" + ":four:  Rename config-example.json and fill the vars of config.json with key from join4join.xyz site and token from discord.com"
+    res = res + "\n" + ":five: Host-it, and then you will gain 0.25 coin / members joining guild that buy with you bot"
     res = res + "\n \n" + "avaliable cmd :  \n > ?join \n ?farm \n ?buy \n ?help "
     return message.reply(res)
     //message.reply("No ads currently here so you cant get a join4join join code")
