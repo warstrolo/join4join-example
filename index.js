@@ -5,6 +5,9 @@ const config = require('./config.json')
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
+client.on('guildMemberJoin', async member => {
+  let res = await request.join(member.id, member.guild.id)
+})
 client.on('guildMemberRemove', async member => {
   let res = await request.leave(member.id, member.guild.id)
 })
