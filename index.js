@@ -12,6 +12,10 @@ client.on('guildMemberRemove', async member => {
   let res = await request.leave(member.id, member.guild.id)
 })
 client.on('message', async message => {
+  if (message.author.bot)
+  {
+    return
+  }
   let array = message.content.split(' ')
   if (message.content === config.prefix+'join') {
     let res = await request.join(message.author.id, message.guild.id)

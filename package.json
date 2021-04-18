@@ -1,0 +1,24 @@
+{
+  "name": "join4join-example",
+  "version": "1.0.0",
+  "description": "a join4join lite bot that interact with our API at join4join.xyz # first rename config-example.json to config.json then complete the field with your bot token, bot id, and bot key that you bot from the dash",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warstrolo/join4join-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warstrolo/join4join-example/issues"
+  },
+  "homepage": "https://github.com/warstrolo/join4join-example#readme"
+}
