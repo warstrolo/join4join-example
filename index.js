@@ -32,6 +32,8 @@ client.on('message', async message => {
     }
     //message.reply("No ads currently here so you cant get a join4join join code")
   }
+  // For dev purpose only
+  /*
   if (message.content === config.prefix+'left') {
     let res = await request.leave(message.author.id, message.guild.id)
     if (res[0] == false && !res[1])
@@ -50,7 +52,7 @@ client.on('message', async message => {
       } 
     }
     //message.reply("No ads currently here so you cant get a join4join join code")
-  }
+  }*/
   if (message.content === config.prefix+'farm') {
     let res = await request.farm(message.author.id)
     if (res == false)
@@ -95,20 +97,37 @@ client.on('message', async message => {
   }
   if (array[0]=== config.prefix+'help') {
    
-    res = "New system : ";
-    res = res + "\n" + ":one: Login to the dashboard, then join our support servers"
-    res = res + "\n" + ":two: in <#830034378213949440> (bots-that-use-the-join4join-system) or https://join4join.xyz/botslist you will see community bots to invite"
-    res = res + "\n" + ":three: when you have invited 1 of all the bots you can use the ?buy command"
-    res = res + "\n" + ":four: when you have join a server with ?farm go to the dashboard under join title you will see your awaiting join"
-    res = res + "\n" + ":five: then you will receve your coins"
-    res = res + "\n \n" + "You are a bot owner"
-    res = res + "\n" + ":one: join the support server"
-    res = res + "\n" + ":two: enter the bot id on https://join4join/bots"
-    res = res + "\n" + ":three: download the example on https://github.com/warstrolo "
-    res = res + "\n" + ":four:  rename config-example.json and fill the vars of config.json with key from join4join.xyz site and token from discord.com"
-    res = res + "\n" + ":five: host-it, and then you will gain 0.25 coin / members joining guild that buy with you bot"
-    res = res + "\n \n" + "avaliable cmd :  \n > ?join \n ?farm \n ?buy \n ?help "
-    return message.reply(res)
+    const embed = {
+      "title": "New system :",
+      "description": "Here the docs of the new system",
+      "url": "https://join4join.xyz",
+      "color": 1,
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/attachments/765632451509878804/768943766794666034/9ef9b5a1d6219ba96ace92e2cc3f69d1.png",
+        "text": "join4join.xyz"
+      },
+      "author": {
+        "name": "join4join",
+        "url": "https://join4join.xyz",
+        "icon_url": "https://cdn.discordapp.com/attachments/765632451509878804/768943766794666034/9ef9b5a1d6219ba96ace92e2cc3f69d1.png"
+      },
+      "fields": [
+        {
+          "name": "New farm / buy system ",
+          "value": ":one: Login to the dashboard, then join our support servers  \n:two: in <#830034378213949440> (bots-that-use-the-join4join-system) you will see community bots to invite     \n:three: when you have invited 1 of all the bots you can use the ?buy command  \n:four: when you have join a server with ?farm go to the dashboard and validate the join to get your coin if no join are waiting, then do ?join and check the dashboard \n:five: then you will receve your coins"
+        },
+        {
+          "name": "If you are a bot owner :",
+          "value": ":one: join the support server \n:two: enter the bot id on https://join4join/bots \n:three: download the example on https://github.com/warstrolo \n:four:  rename config-example.json and fill the vars of config.json with key from join4join.xyz site and token from discord.com   \n:five: host-it, and then you will gain 0.25 coin / members joining guild that buy with you bot"
+        },
+        {
+          "name": "Avaliable CMD :",
+          "value": ":one: ?farm \n:two: ?join \n:three: ?buy"
+        }
+      ]
+    };
+     message.channel.send({ embed });
+     return message.channel.send("https://join4join.xyz \n https://discord.gg/ZC87upd3z8 ")
     //message.reply("No ads currently here so you cant get a join4join join code")
   }
   
