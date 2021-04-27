@@ -123,8 +123,7 @@ client.on('message', async message => {
   if (array[0]=== config.prefix+'help') {
    
     const embed = {
-      "title": "New system :",
-      "description": "Here the docs of the new system",
+      "title": "Farm :",
       "url": "https://join4join.xyz",
       "color": 1,
       "footer": {
