@@ -69,7 +69,28 @@ client.on('message', async message => {
       res[1].forEach(element => {
         msg = msg + "\n"+ element.name + " : https://discord.gg/" + element.invite
       });
-      return message.reply(msg)
+      const embed = {
+      "title": "New system :",
+      "description": "Here the docs of the new system",
+      "url": "https://join4join.xyz",
+      "color": 1,
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/attachments/765632451509878804/768943766794666034/9ef9b5a1d6219ba96ace92e2cc3f69d1.png",
+        "text": "join4join.xyz"
+      },
+      "author": {
+        "name": "join4join",
+        "url": "https://join4join.xyz",
+        "icon_url": "https://cdn.discordapp.com/attachments/765632451509878804/768943766794666034/9ef9b5a1d6219ba96ace92e2cc3f69d1.png"
+      },
+      "fields": [
+        {
+          "name": "Farm ",
+          "value": msg
+        }
+      ]
+    };
+    return message.channel.send({ embed });
     }
     if (res[0] == "error")
     {
