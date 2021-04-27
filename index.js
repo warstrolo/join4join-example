@@ -70,8 +70,7 @@ client.on('message', async message => {
         msg = msg + "\n"+ element.name + " : https://discord.gg/" + element.invite
       });
       const embed = {
-      "title": "New system :",
-      "description": "Here the docs of the new system",
+      "title": "Farm :",
       "url": "https://join4join.xyz",
       "color": 1,
       "footer": {
@@ -123,7 +122,8 @@ client.on('message', async message => {
   if (array[0]=== config.prefix+'help') {
    
     const embed = {
-      "title": "Farm :",
+      "title": "New system :",
+      "description": "Here the docs of the new system",
       "url": "https://join4join.xyz",
       "color": 1,
       "footer": {
